@@ -1,0 +1,503 @@
+@import url(reset.css);
+@import url('https://fonts.googleapis.com/css2?family=Special+Elite&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu:wght@300;400;500;700&display=swap');
+
+
+
+
+
+
+body{
+background-color: #393E46;
+font-family: 'Ubuntu';
+}
+.wrapper{
+    margin-left: 100px;
+    margin-right: 100px;
+}
+.head {
+    padding-top: 10px;
+        display: flex;
+        gap: 31px;
+        margin-top: 40px;
+        margin-bottom: 10px;
+        justify-content: space-between;
+        align-items: center;
+    
+      }
+.list {
+    display: flex;
+    color: #fbf8f8;
+    font-size: 16px;
+    font-weight: 400;
+    padding-left: 30px;
+    gap: 44px;
+text-decoration: none;
+  }
+  .list li :active, 
+  .list li:hover
+  {
+    text-decoration:none;
+    transition: 0.5s ;
+    font-size: 20px;
+  }
+  .list li{
+    padding-top: 12px;
+  }
+
+
+
+  .navbar input {
+    display: none;
+  }
+  @media (max-width: 991px) {
+    .list {
+      position: absolute;
+      background: rgba(69, 68, 68, 0.844);
+      backdrop-filter: blur(7.5px);
+
+
+      flex-direction: column;
+      overflow: hidden;
+      width: 100%;
+      height: 0;
+      left: 0;
+      top: 127px;
+      transition: 0.4s ease-in-out;
+      box-shadow: 0px 8px 26px 1px rgba(0, 0, 0, 0.50);
+    }
+
+
+}
+  .list li a {
+    cursor: pointer;
+    color: #fbf8f8;
+  }
+   @media (max-width: 991px) {
+    .list li a{
+      color: #fff;
+padding: 0;
+text-align: right;
+      font-size: 32px;
+      font-weight: 400;
+        display: flex;
+      }
+
+
+    .butli a{
+      font-size: 16px !important;
+
+    }
+   
+}
+
+
+  @media (max-width: 991px) {
+     .list li a:active,
+  .list li a:hover{
+    font-weight: 600;
+    transition: all 0.3s ;
+  } 
+  .navbar input {
+    display: none;
+  }
+} 
+.myburger input {
+    display: none;
+  }  
+  .myburger {
+    display: none;
+    position: relative;
+    background: transparent;
+    cursor: pointer;
+    height: 20px;
+    width: 26px;
+  }
+  @media (max-width: 991px) {
+    .myburger {
+       display: block;
+     }
+     .but1{
+      align-items: center;
+      margin: 0 auto;
+     }
+    }
+  
+  .spanb {
+    display: block;
+    position: absolute;
+    background: #424242;
+    border-radius: 10px;
+    height: 2px;
+    width: 25px;
+  }
+  
+  .spanb:nth-child(1) {
+    top: 0%;
+  }
+  
+  .spanb:nth-child(2) {
+    top: 50%;
+  }
+  
+  .spanb:nth-child(3) {
+    top: 100%;
+  }
+    input:checked ~ .list {
+    padding-top: 80px;
+    height: 530px;
+    
+  }
+  input:checked ~ .myburger .spanb:nth-child(1) {
+    transform: rotate(40deg);
+    left: 3px;
+    top: -3px; 
+   
+  }
+.maintext{
+    max-width: 1000px;
+    padding-top: 80px;
+    text-align: center;
+    margin-left: 180px;
+}
+
+  .main1{
+    background:  url(./photo_2023-11-23_14-13-43.jpg);
+    background-size: cover;
+    max-width: 100%;
+    height: 600px;
+  }
+  .maintextp{
+font-size: 28px;
+  }
+
+  h1{
+    font-size: 60px;
+    color: #FFF;
+    margin-top: 75px;
+  }
+
+.hrmain {
+    margin-top: 6px;
+    margin-bottom: 12px;
+    margin-bottom: 10px;
+    border: 0;
+    height: 5px;
+    background-image: -webkit-linear-gradient(left, rgba(0,0,0,0), rgba(254, 254, 254, 0.75), rgba(0,0,0,0));
+    background-image:    -moz-linear-gradient(left, rgba(0,0,0,0), rgba(0,0,0,0.75), rgba(0,0,0,0));
+    background-image:     -ms-linear-gradient(left, rgba(0,0,0,0), rgba(0,0,0,0.75), rgba(0,0,0,0));
+    background-image:      -o-linear-gradient(left, rgba(0,0,0,0), rgba(0,0,0,0.75), rgba(0,0,0,0));
+}
+
+.maintextp{
+    font-family: 'Ubuntu';
+    color: #aea1a1;
+}
+.whyall, .whyall2{
+    display: flex;
+    justify-content: space-between;
+}
+
+h2, h3{
+    font-size: 50px;
+    color: #ef4747; 
+    text-align: center;
+    padding-top: 50px;
+    
+
+}
+h3{
+  padding-bottom: 30px;
+}
+
+.whyall3, .whyall1, .whyall2, .whyall4{
+    justify-content: space-between;
+    display: flex;
+    max-width: 600px;
+}
+
+.whyallp{
+    font-size: 35px;
+    color: aliceblue;
+    font-weight: 600;
+    padding-bottom: 15px;
+    padding-top: 40px;
+}
+.whyallp1{
+    font-size: 20px;
+    color: rgb(165, 167, 168);
+}
+.imgwhy img{
+max-width: 200px;
+margin-right: 40px;
+margin-top: 40px;
+}
+.style3mobile{
+  display: none;
+}
+
+.style1, .style2, .style3, .style4{
+
+   max-width: 100%;
+    display: flex;
+    justify-content: space-between;
+    gap: 15px;
+    padding-top: 30px;
+}
+.style1img{
+    display: flex;
+flex-direction: column;
+gap: 10px;
+}
+.style1img img{
+    max-width: 400px;
+    max-height: 400px;
+    
+}
+
+.stylep{
+    font-size: 40px;
+    color: #b19898;
+    margin-top: 25px;
+    margin-bottom: 15px;
+}
+
+.stylemin{
+    max-width: 770px;
+}
+.minimalism{
+    font-size: 50px;
+font-weight: 500;
+color: rgb(171, 44, 48);
+padding-bottom: 15px;
+}
+.minimalismp{
+    font-size: 20px;
+    color: #FFF;
+}
+.footer{
+    margin-top: 100px;
+}
+.footerall{
+    display: flex;
+    justify-content: space-between;
+}
+
+.link{
+    display: flex;
+    flex-wrap: nowrap;
+    gap: 20px;
+}
+.geo1{
+    font-size: 25px;
+    font-weight: 500;
+    color: #FFF;
+}
+.uzh{
+    padding-top: 5px;
+    font-size: 15px;
+    color: #FFF;
+}
+
+.footimg{
+display: flex;
+justify-content: center;
+margin-top: 50px;
+margin-bottom: 50px;
+}
+@media (max-width: 768px) {
+  .style3{
+    display: none;
+  }
+  .style3mobile{
+    display: block;
+  }
+.maintext{
+    max-width: 748px;
+    margin-left: 10px;
+    margin-right: 10px;
+}
+.whyall{
+    display: flex;
+    flex-direction: column;
+}
+.whyallp1{
+  font-size: 27px;
+}
+.minimalismp{
+  font-size: 28px;
+}
+.whyall1, .whyall2, .whyall3, .whyall4{
+    display: flex;
+    flex-direction: column;
+}
+.style, .style1, .style2, .style3mobile, .style4{
+    display: flex;
+    flex-direction: column;
+}
+.footerall{
+    display: flex;
+    flex-direction: column;
+}
+.geo, .day, .contact, .ins{
+  margin-top: 17px;
+}
+.geo1{
+  font-size: 40px;
+}
+.uzh{
+  font-size: 28px;
+}
+.imgwhy img{
+  width: 100px;
+  height: 100px;
+}
+}
+
+
+
+
+@keyframes printed_text {
+  from {
+    width: 0;
+  }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media (max-width: 797px) {
+.wrapper{
+    margin-left: 10px;
+    margin-right: 10px;
+}
+h1{
+    font-size: 35px;
+}
+
+
+}
+
+
