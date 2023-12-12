@@ -387,10 +387,14 @@ margin-left: 10px;
   margin-top: 17px;
 }
 .geo1{
-  font-size: 40px;
+  font-size: 30px;
 }
 .uzh{
-  font-size: 28px;
+  font-size: 22px;
+}
+.link img{
+  width: 50px;
+  height: 50px;
 }
 .imgwhy img{
   width: 100px;
